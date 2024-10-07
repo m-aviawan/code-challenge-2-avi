@@ -121,11 +121,11 @@ const Footer = () => {
           <section className='lg:col-[1/4] lg:row-[3/4] text-gray-600 flex items-end h-full'>
             <div className="text-sm leading-7 w-[80%]">
               <ul className='flex flex-wrap gap-2'>
-                <li><a>Global Network</a> |</li>
-                <li><a>Inquiry</a> |</li>
-                <li><a className='text-gray-950'><strong>Cookies Policy</strong></a> |</li>
-                <li><a>Sitemap</a> |</li>
-                <li><a>Ethical Management</a></li>
+                <li className='hover:cursor-pointer hover:text-gray-800'>Global Network |</li>
+                <li className='hover:cursor-pointer hover:text-gray-800'>Inquiry |</li>
+                <li className='hover:cursor-pointer text-gray-950'><strong>Cookies Policy</strong> |</li>
+                <li className='hover:cursor-pointer hover:text-gray-800'>Sitemap |</li>
+                <li className='hover:cursor-pointer hover:text-gray-800'>Ethical Management</li>
               </ul>
             </div>
           </section>
