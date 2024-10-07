@@ -45,12 +45,12 @@ const Hero = () => {
               }
           </div>
           <div id='carousel-buttons' className='absolute inset-0 flex items-center justify-between z-20 p-1'>
-              <button onClick={prev}>
+              <button type='button' onClick={prev}>
                 <svg className="lg:h-8 lg:w-8 md:w-5 md:h-5 w-9 h-9 transition-[0.25s] hover:text-gray-700 text-white"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
                 </svg>
               </button>
-              <button onClick={next}>
+              <button type='button' onClick={next}>
                 <svg className="lg:h-8 lg:w-8 md:w-5 md:h-5 w-9 h-9 transition-[0.25s] hover:text-gray-700 text-white"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
                 </svg>
