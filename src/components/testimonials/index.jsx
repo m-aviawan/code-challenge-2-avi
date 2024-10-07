@@ -41,7 +41,7 @@ const Testimonials = () => {
                   <p className=' text-black text-center text-xl'>{item.testimony}</p>
                 </section>
                 <span className='flex items-center gap-3'>
-                  <div className={`${item.color} text-white py-1 px-2 h-fit w-fit text-sm`}>{item.city}</div>
+                  <div className={`bg-gray-800 text-white py-1 px-2 h-fit w-fit text-sm`}>{item.city}</div>
                   <svg className="h-4 w-4 text-black"  
                     viewBox="0 0 24 24"  
                     fill="none"  
