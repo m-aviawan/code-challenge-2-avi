@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import ViewMoreBtn from '@/app/components/viewMoreBtn'
+import ViewMoreBtn from '@/components/viewMoreBtn'
 
 const Award = () => {
   return (

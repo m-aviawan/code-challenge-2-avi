@@ -4,9 +4,14 @@ import React from 'react'
 
 const Navbar = () => {
   return (
-    <nav id='navbar' className='fixed grid grid-cols-4 w-full border-b border-b-gray-300 py-3 pr-3 md:pr-2 lg:px-10 px-[3vw] bg-white z-50'>
-      <article id='company-logo'>
-        <h1 className='lg:text-xl md:text-2xl text-[30px] font-bold text-left'><Link href='/'>LocknLock</Link></h1>
+    <nav id='navbar' className='fixed grid grid-cols-4 w-full border-b border-b-gray-300 py-3 pr-3 md:pr-2 lg:px-10 px-[3vw] bg-white z-30'>
+      <div className='absolute lg:hidden flex w-full h-[65px] top-0'>
+        <div className='w-full z-40'></div>
+        <div className='relative z-10 w-[50px]'></div>
+        <div className='w-[50px] z-40'></div>
+      </div>
+      <article id='relative company-logo'>
+        <h1 className='relative lg:text-xl md:text-2xl z-50 text-[30px] font-bold text-left w-fit'><Link href='/'>LocknLock</Link></h1>
         <p className='hidden lg:flex text-xs text-left'>Connects living with life, liveliness and love</p>
       </article>
       <ul id='navbar-links' className='hidden lg:flex justify-center items-center gap-10 font-semibold text-gray-700 text-lg col-span-2'>
@@ -15,12 +20,12 @@ const Navbar = () => {
         <li className='hover:text-black'><Link href='/products'>Products</Link></li>
         <li className='hover:text-black'><Link href='/teams'>Our Teams</Link></li>
       </ul>
-      <section id='search' className='flex text-gray-700 hover:text-black hover:cursor-pointer justify-end items-center gap-2 col-[4/5]'>
-      <svg className="sm:h-6 sm:w-6 h-8 w-8 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <section id='search' className='relative flex text-gray-700 hover:text-black hover:cursor-pointer justify-end items-center gap-2 col-[4/5]'>
+      <svg className="relative z-50 sm:h-6 sm:w-6 h-8 w-8 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
       </svg>
       </section>
-      <aside className="lg:hidden absolute w-full right-0 top-[3px] md:top-[-2.5px] collapse p-0 rounded-none">
+      <aside className="lg:hidden absolute z-30 w-full right-0 top-[3px] md:top-[-2.5px] collapse p-0 rounded-none">
         <input type="checkbox" name="my-accordion-1"/>
         <div className="collapse-title text-xl flex justify-end font-medium">
           <svg className="text-black lg:hidden sm:w-7 sm:h-7 h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

@@ -25,14 +25,14 @@ const Hero = () => {
                 heroSlider.map((item, index) => {
                   return(
                     <section key={index} id={`carousel-${index + 1}`} className="relative rounded-none max-h-[100vh] w-screen my-bg-lin-1">
-                      <figure className='absolute bottom-0 -z-10'>
+                      <figure className='absolute bottom-0 w-screen -z-10'>
                         <Image
                           loading='lazy'
                           src={item.img}
                           width={1500}
                           height={1500}
                           alt={`pict-${index + 1}`} 
-                          className="object-cover mx-auto h-screen w-full"
+                          className="object-cover h-screen w-screen"
                         />
                       </figure>
                       <article className='z-10 p-12 lg:p-16 flex flex-col justify-center h-screen items-center gap-5'>
@@ -44,7 +44,7 @@ const Hero = () => {
                 })
               }
           </div>
-          <div id='carousel-buttons' className='absolute inset-0 flex items-center justify-between z-30 p-1'>
+          <div id='carousel-buttons' className='absolute inset-0 flex items-center justify-between z-20 p-1'>
               <button onClick={prev}>
                 <svg className="lg:h-8 lg:w-8 md:w-5 md:h-5 w-9 h-9 transition-[0.25s] hover:text-gray-700 text-white"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>

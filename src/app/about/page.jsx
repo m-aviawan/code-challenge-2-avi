@@ -1,10 +1,11 @@
-import CompanyCulture from "../components/companyCulture"
-import HistoryBanner from "../components/historyBanner"
-import BreakPicture from "../features/about/components/breakPicture"
-import HistorySessionWithPictBg from "../features/about/components/historySessionWithPictBg"
-import HistorySessionLeftWOPict from "../features/about/components/historySessionLeftWOPict"
-import HistorySessionRightWOPict from "../features/about/components/historySessionRightWOPict"
-import HistorySessionHOC from "../features/about/components/historySessionHOC"
+import CompanyCulture from "../../components/companyCulture"
+import HistoryBanner from "../../components/historyBanner"
+import BreakPicture from "../../features/about/components/breakPicture"
+import HistorySessionWithPictBg from "../../features/about/components/historySessionWithPictBg"
+import HistorySessionLeftWOPict from "../../features/about/components/historySessionLeftWOPict"
+import HistorySessionRightWOPict from "../../features/about/components/historySessionRightWOPict"
+import HistorySessionHOC from "../../features/about/components/historySessionHOC"
+import TeamsProfile from "../../components/teamsProfile"
 
 const About = () => {
     return (
@@ -408,9 +409,8 @@ const About = () => {
             ]}
             />
           </HistorySessionHOC>
-  
           <CompanyCulture />
-  
+          <TeamsProfile />
       </main>
     )
   }

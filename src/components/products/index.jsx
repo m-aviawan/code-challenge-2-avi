@@ -1,4 +1,4 @@
-import ViewMoreBtn from '@/app/components/viewMoreBtn'
+import ViewMoreBtn from '@/components/viewMoreBtn'
 import React from 'react'
 import Image from 'next/image'
 
