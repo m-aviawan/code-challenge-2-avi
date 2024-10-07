@@ -5,7 +5,8 @@ const GlobalNetworkBanner = () => {
   return (
     <section id='global-network-banner' className='relative h-[70vh] w-full'>
     <figure className='absolute h-[70vh] w-full'>
-      <Image 
+      <Image
+      loading='lazy' 
       src="https://www.locknlock.com/idn/image/common/main/banner-lg.jpg" 
       width={1500}
       height={1500}

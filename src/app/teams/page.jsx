@@ -31,6 +31,7 @@ const Teams = async() => {
       <header className='relative flex px-5 md:px-12 lg:px-16 justify-center h-screen items-center text-white'>
         <figure className='absolute top-0 w-full h-screen'>
           <Image 
+          loading='lazy'
           src='https://www.locknlock.com/eng/image/common/innovation/labs/research-development.jpg'
           width={1500}
           height={1500}
@@ -48,6 +49,7 @@ const Teams = async() => {
             <article key={index} className='p-2 grid grid-cols-3 gap-2 col-span-1 border border-gray-300 bg-gray-100'>
               <figure className='col-[3/4]'>
                 <Image
+                loading='lazy'
                 src={item.picture.large}
                 width={1000}
                 height={1000}

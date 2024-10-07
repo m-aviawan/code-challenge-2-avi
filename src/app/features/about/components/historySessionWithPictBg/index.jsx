@@ -5,7 +5,8 @@ const HistorySessionWithPictBg = ({id, imgUrl, year, monthAndDesc}) => {
   return (
         <section id={id} className='relative w-full rounded-none text-black'>
             <figure className='absolute h-screen w-full'>
-              <Image 
+              <Image
+              loading='lazy' 
               src={imgUrl} 
               alt=""
               width={1500} 

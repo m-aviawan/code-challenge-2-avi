@@ -27,6 +27,7 @@ const Hero = () => {
                     <section key={index} id={`carousel-${index + 1}`} className="relative rounded-none max-h-[100vh] w-screen my-bg-lin-1">
                       <figure className='absolute bottom-0 -z-10'>
                         <Image
+                          loading='lazy'
                           src={item.img}
                           width={1500}
                           height={1500}

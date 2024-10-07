@@ -23,6 +23,7 @@ const Now = () => {
                   <section key={index} className='relative w-full h-full'>
                     <figure className='w-full h-full overflow-hidden'>
                       <Image 
+                      loading='lazy'
                       src={item} 
                       alt=""
                       width={800}

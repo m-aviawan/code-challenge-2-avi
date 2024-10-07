@@ -35,7 +35,8 @@ const CompanyCulture = () => {
     <section>
       <section id="company-culture-head" className='relative h-screen'>
           <figure className='absolute h-screen w-full'>
-            <Image 
+            <Image
+            loading='lazy' 
             src="https://www.locknlock.com/idn/image/common/innovation/labs/labs-hero-lg.jpg" 
             alt=""
             width={1500}
@@ -48,7 +49,8 @@ const CompanyCulture = () => {
               <p className='z-10 text-xl font-bold text-center text-white drop-shadow-sm'>consumers around the world</p>
             </div>
             <figure className='w-full flex items-center justify-center py-8 z-10'>
-              <Image 
+              <Image
+              loading='lazy' 
               src="https://www.locknlock.com/idn/image/common/career/culture/culture-main-title-eng.svg" 
               alt=""
               width={1500} 

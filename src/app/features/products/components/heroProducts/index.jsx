@@ -5,7 +5,8 @@ const HeroProducts = () => {
   return (
     <header id='products-banner' className='relative h-screen w-full'>
       <figure className='absolute h-screen w-full'>
-        <Image 
+        <Image
+        loading='lazy' 
         src="https://www.locknlock.com/idn/image/product/2021/06/24/46699318dwdc.jpg" 
         alt="" 
         width={1500}

@@ -6,6 +6,7 @@ const HistoryBanner = () => {
     <section className="w-full relative rounded-none mt-8 mb-16 overflow-hidden">
     <figure className='my-14 relative z-10 top-0 w-full '>
       <Image
+        loading='lazy'
         src="https://www.locknlock.com/idn/image/common/about/history/scene-item-0.png"
         width={1000}
         height={1000}

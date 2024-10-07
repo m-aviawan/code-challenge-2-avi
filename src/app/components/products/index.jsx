@@ -42,7 +42,8 @@ const ProductsMain = () => {
           return(
             <section key={index} id={item.id} className='relative h-screen w-full'>
               <figure className='absolute w-full h-screen'>
-                <Image 
+                <Image
+                loading='lazy' 
                 src={item.imgUrl} 
                 width={1000}
                 height={1000}

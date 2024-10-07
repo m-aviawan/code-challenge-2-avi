@@ -4,7 +4,8 @@ import Image from 'next/image'
 const BreakPicture = ({imgUrl, heightClassName}) => {
   return (
     <section className='w-full flex justify-center'>
-        <Image 
+        <Image
+        loading='lazy' 
         src={imgUrl} 
         width={1500}
         height={1500}

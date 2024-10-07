@@ -5,7 +5,8 @@ const AllCatalogDownloadBanner = () => {
   return (
     <section id='catalog-download' className='flex relative md:h-[60vh] md:min-h-fit h-screen'>
       <figure className='absolute h-full w-full'>
-        <Image 
+        <Image
+        loading='lazy' 
         src="https://www.locknlock.com/idn/image/common/product/catalog/catalog-hero-lg.jpg" 
         alt="" 
         width={1500}
