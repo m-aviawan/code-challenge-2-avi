@@ -1,5 +1,5 @@
 import React from 'react'
-import HGroup from '../hgroup'
+import HGroup from '../../features/home/components/hgroup'
 
 const Testimonials = () => {
 

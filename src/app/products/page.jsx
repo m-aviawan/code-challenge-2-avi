@@ -4,6 +4,7 @@ import ProductsMain from '../components/products'
 import ProductsPhrase from '../features/products/components/productsPhrase'
 import HeroProducts from '../features/products/components/heroProducts'
 import AllCatalogDownloadBanner from '../features/products/components/allCatalogDownloadBanner'
+import Testimonials from '../components/testimonials'
 
 const ProductsPage = () => {
   return (
@@ -12,6 +13,7 @@ const ProductsPage = () => {
       <ProductsPhrase />
       <ProductsMain />
       <Now />
+      <Testimonials />
       <AllCatalogDownloadBanner />
     </main>
   )

@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav id='navbar' className='fixed grid grid-cols-4 w-full border-b border-b-gray-300 py-3 pr-3 md:pr-2 lg:px-10 px-[3vw] bg-white z-50'>
       <article id='company-logo'>
-        <h1 className='lg:text-xl md:text-2xl text-[30px] font-bold text-left'>LocknLock</h1>
+        <h1 className='lg:text-xl md:text-2xl text-[30px] font-bold text-left'><Link href='/'>LocknLock</Link></h1>
         <p className='hidden lg:flex text-xs text-left'>Connects living with life, liveliness and love</p>
       </article>
       <ul id='navbar-links' className='hidden lg:flex justify-center items-center gap-10 font-semibold text-gray-700 text-lg col-span-2'>
@@ -34,9 +34,9 @@ const Navbar = () => {
               <div className="collapse-title px-5 md:px-12 text-base font-bold">About</div>
               <div className="collapse-content px-0">
                 <ul className='bg-gray-100 flex flex-col text-left gap-3 text-sm text-gray-900'>
-                  <li className='font-bold border-b border-gray-300 py-3 px-5 md:px-12' >History</li>
-                  <li className='border-b border-gray-300 py-3 px-5 md:px-12'>Company Culture</li>
-                  <li className='border-b border-gray-300 py-3 px-5 md:px-12'>Our Teams</li>
+                  <li className='font-bold border-b border-gray-300 py-3 px-5 md:px-12' ><Link href='/about'>History</Link></li>
+                  <li className='border-b border-gray-300 py-3 px-5 md:px-12'><Link href='/about'>Company Culture</Link></li>
+                  <li className='border-b border-gray-300 py-3 px-5 md:px-12'><Link href='/about'>Our Teams</Link></li>
                 </ul>
               </div>
             </div>
@@ -45,9 +45,9 @@ const Navbar = () => {
               <div className="collapse-title px-5 md:px-12 text-base font-bold">Product</div>
               <div className="collapse-content px-0">
                 <ul className='bg-gray-100 flex flex-col text-left gap-3 text-sm text-gray-900'>
-                  <li className='font-bold border-b border-gray-300 py-3 px-5 md:px-12'>Our Products</li>
-                  <li className='border-b border-gray-300 py-3 px-5 md:px-12'>Now</li>
-                  <li className='border-b border-gray-300 py-3 px-5 md:px-12'>Dowmload E-Catalog</li>
+                  <li className='font-bold border-b border-gray-300 py-3 px-5 md:px-12'><Link href='/products'>Our Products</Link></li>
+                  <li className='border-b border-gray-300 py-3 px-5 md:px-12'><Link href='/products'>Now</Link></li>
+                  <li className='border-b border-gray-300 py-3 px-5 md:px-12'><Link href='/products'>Dowmload E-Catalog</Link></li>
                 </ul>
               </div>
             </div>
@@ -56,7 +56,7 @@ const Navbar = () => {
               <div className="collapse-title px-5 md:px-12 text-base font-bold">Teams</div>
               <div className="collapse-content px-0">
                 <ul className='bg-gray-100 flex flex-col text-left gap-3 text-sm text-gray-900'>
-                  <li className='font-bold border-b border-gray-300 py-3 px-5 md:px-12'>Our People</li>
+                  <li className='font-bold border-b border-gray-300 py-3 px-5 md:px-12'><Link href='/teams'>Our People</Link></li>
                 </ul>
               </div>
             </div>
