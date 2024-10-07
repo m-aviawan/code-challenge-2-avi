@@ -32,7 +32,7 @@ const Hero = () => {
                           width={1500}
                           height={1500}
                           alt={`pict-${index + 1}`} 
-                          className="object-cover mx-auto h-screen"
+                          className="object-cover mx-auto h-screen w-full"
                         />
                       </figure>
                       <article className='z-10 p-12 lg:p-16 flex flex-col justify-center h-screen items-center gap-5'>
