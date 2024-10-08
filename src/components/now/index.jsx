@@ -16,7 +16,7 @@ const Now = () => {
   return (
         <section id='now' className='grid grid-cols-1 px-5 md:x-14 py-14 lg:py-16 lg:px-16 gap-12'>
           <HGroup title='Now' />
-          <section id='now-list' className='grid lg:grid-cols-3 grid-cols-2 gap-3 lg:gap-16'>
+          <section id='now-list' className='grid lg:grid-cols-3 grid-cols-2 gap-3 lg:gap-16 '>
             {
               data.map((item, index) => {
                 return(
@@ -26,9 +26,9 @@ const Now = () => {
                       loading='lazy'
                       src={item} 
                       alt=""
-                      width={600}
-                      height={600} 
-                      className='hover:scale-110 object-cover transition-[0.5s]'
+                      width={700}
+                      height={700} 
+                      className='hover:scale-110 object-cover transition-[0.5s] w-full'
                       />
                     </figure>
                     <div className='absolute  md:bottom-[19px]  md:right-[1.2vw] bottom-[2.5vw] right-[2vw]'>

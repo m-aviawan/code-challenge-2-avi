@@ -11,7 +11,7 @@ const HistorySessionWithPictBg = ({id, imgUrl, year, monthAndDesc}) => {
               alt=""
               width={1500} 
               height={1500} 
-              className='object-cover h-screen'/>
+              className='object-cover w-full h-screen'/>
             </figure>
             <figure className='md:hidden absolute h-screen w-full'>
               <Image

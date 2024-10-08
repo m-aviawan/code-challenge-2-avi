@@ -10,7 +10,7 @@ const BreakPicture = ({imgUrl, heightClassName}) => {
         width={1500}
         height={1500}
         alt="" 
-        className={`object-cover h-[80vh] min-h-[515px]`}
+        className={`object-cover h-[80vh] min-h-[515px] w-full`}
         />
     </section>
   )
