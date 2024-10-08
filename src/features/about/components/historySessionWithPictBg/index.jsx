@@ -4,7 +4,16 @@ import Image from 'next/image'
 const HistorySessionWithPictBg = ({id, imgUrl, year, monthAndDesc}) => {
   return (
         <section id={id} className='relative w-full rounded-none text-black'>
-            <figure className='absolute h-screen w-full'>
+            <figure className='md:flex hidden absolute h-screen w-full'>
+              <Image
+              loading='lazy' 
+              src={imgUrl} 
+              alt=""
+              width={1500} 
+              height={1500} 
+              className='object-cover h-screen'/>
+            </figure>
+            <figure className='md:hidden absolute h-screen w-full'>
               <Image
               loading='lazy' 
               src={imgUrl} 

@@ -34,7 +34,7 @@ const CompanyCulture = () => {
   return (
     <section>
       <section id="company-culture-head" className='relative h-screen'>
-          <figure className='absolute h-screen w-full'>
+          <figure className='hidden md:flex absolute h-screen w-full'>
             <Image
             loading='lazy' 
             src="https://www.locknlock.com/idn/image/common/innovation/labs/labs-hero-lg.jpg" 
@@ -43,18 +43,37 @@ const CompanyCulture = () => {
             height={1500}
             className='object-cover h-screen w-full' />
           </figure>
+          <figure className='md:hidden absolute h-screen w-full'>
+            <Image
+            loading='lazy' 
+            src="https://www.locknlock.com/idn/image/common/innovation/labs/labs-hero-lg.jpg" 
+            alt=""
+            width={700}
+            height={700}
+            className='object-cover h-screen w-full' />
+          </figure>
           <section className='p-16 flex flex-col justify-center gap-7 my-bg-lin-1 h-screen w-full'>
             <div>
               <p className='z-10 text-xl font-bold text-center text-white drop-shadow-sm'>For the benefit of</p>
               <p className='z-10 text-xl font-bold text-center text-white drop-shadow-sm'>consumers around the world</p>
             </div>
-            <figure className='w-full flex items-center justify-center py-8 z-10'>
+            <figure className='w-full hidden md:flex items-center justify-center py-8 z-10'>
               <Image
               loading='lazy' 
               src="https://www.locknlock.com/idn/image/common/career/culture/culture-main-title-eng.svg" 
               alt=""
               width={1500} 
               height={1500} 
+              className='sm:w-[50%] w-[100vw]'
+              />
+            </figure>
+            <figure className='w-full md:hidden flex items-center justify-center py-8 z-10'>
+              <Image
+              loading='lazy' 
+              src="https://www.locknlock.com/idn/image/common/career/culture/culture-main-title-eng.svg" 
+              alt=""
+              width={700} 
+              height={700} 
               className='sm:w-[50%] w-[100vw]'
               />
             </figure>

@@ -4,7 +4,17 @@ import Image from 'next/image'
 const HistoryBanner = () => {
   return (
     <section className="w-full relative rounded-none mt-8 mb-16 overflow-hidden">
-    <figure className='my-14 relative z-10 top-0 w-full '>
+    <figure className='my-14 hidden md:flex relative z-10 top-0 w-full '>
+      <Image
+        loading='lazy'
+        src="https://www.locknlock.com/idn/image/common/about/history/scene-item-0.png"
+        width={1000}
+        height={1000}
+        alt="" 
+        className="object-contain z-10 white mx-auto w-[50%] lg:w-[35%]"
+      />
+    </figure>
+    <figure className='my-14 md:hidden relative z-10 top-0 w-full '>
       <Image
         loading='lazy'
         src="https://www.locknlock.com/idn/image/common/about/history/scene-item-0.png"

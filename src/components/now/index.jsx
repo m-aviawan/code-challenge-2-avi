@@ -26,8 +26,8 @@ const Now = () => {
                       loading='lazy'
                       src={item} 
                       alt=""
-                      width={800}
-                      height={800} 
+                      width={600}
+                      height={600} 
                       className='hover:scale-110 object-cover transition-[0.5s]'
                       />
                     </figure>

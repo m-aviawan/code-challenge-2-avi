@@ -25,12 +25,22 @@ const Hero = () => {
                 heroSlider.map((item, index) => {
                   return(
                     <section key={index} id={`carousel-${index + 1}`} className="relative rounded-none max-h-[100vh] w-screen my-bg-lin-1">
-                      <figure className='absolute bottom-0 w-screen -z-10'>
+                      <figure className='md:flex hidden absolute bottom-0 w-screen -z-10'>
                         <Image
                           loading='lazy'
                           src={item.img}
                           width={1500}
                           height={1500}
+                          alt={`pict-${index + 1}`} 
+                          className="object-cover h-screen w-screen"
+                        />
+                      </figure>
+                      <figure className='md:hidden absolute bottom-0 w-screen -z-10'>
+                        <Image
+                          loading='lazy'
+                          src={item.img}
+                          width={700}
+                          height={700}
                           alt={`pict-${index + 1}`} 
                           className="object-cover h-screen w-screen"
                         />

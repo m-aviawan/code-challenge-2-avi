@@ -4,13 +4,22 @@ import Image from 'next/image'
 const AllCatalogDownloadBanner = () => {
   return (
     <section id='catalog-download' className='flex relative md:h-[60vh] md:min-h-fit h-screen'>
-      <figure className='absolute h-full w-full'>
+      <figure className='md:flex hidden absolute h-full w-full'>
         <Image
         loading='lazy' 
         src="https://www.locknlock.com/idn/image/common/product/catalog/catalog-hero-lg.jpg" 
         alt="" 
         width={1500}
         height={1500}
+        className='h-full w-full object-cover'/>
+      </figure>
+      <figure className='md:hidden absolute h-full w-full'>
+        <Image
+        loading='lazy' 
+        src="https://www.locknlock.com/idn/image/common/product/catalog/catalog-hero-lg.jpg" 
+        alt="" 
+        width={700}
+        height={700}
         className='h-full w-full object-cover'/>
       </figure>
       <section className='py-16 lg:px-16 md:px-14 px-5 flex flex-col md:justify-start justify-center'>

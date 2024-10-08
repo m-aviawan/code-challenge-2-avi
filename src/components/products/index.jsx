@@ -41,12 +41,21 @@ const ProductsMain = () => {
         data.map((item, index) => {
           return(
             <section key={index} id={item.id} className='relative h-screen w-full'>
-              <figure className='absolute w-full h-screen'>
+              <figure className='md:flex hidden absolute w-full h-screen'>
                 <Image
                 loading='lazy' 
                 src={item.imgUrl} 
                 width={1000}
                 height={1000}
+                alt="" 
+                className='object-cover h-screen w-full'/>
+              </figure>
+              <figure className='md:hidden absolute w-full h-screen'>
+                <Image
+                loading='lazy' 
+                src={item.imgUrl} 
+                width={700}
+                height={700}
                 alt="" 
                 className='object-cover h-screen w-full'/>
               </figure>
