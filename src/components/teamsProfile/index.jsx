@@ -17,17 +17,7 @@ const TeamsProfile = async() => {
           return(
             <article key={index} className='flex flex-col p-2 lg:grid grid-cols-3 gap-2 col-span-1 border border-gray-300 bg-gray-100'>
               <section className='flex justify-between w-full col-span-3'>
-                <figure className='md:flex hidden'>
-                  <Image
-                  loading='lazy'
-                  src={item.picture.large}
-                  width={1000}
-                  height={1000}
-                  alt=''
-                  className='object-full lg:w-full w-[30vw]'
-                  />
-                </figure>
-                <figure className='md:hidden'>
+                <figure>
                   <Image
                   loading='lazy'
                   src={item.picture.large}

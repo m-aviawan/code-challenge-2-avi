@@ -4,22 +4,13 @@ import Image from 'next/image'
 const HeroProducts = () => {
   return (
     <header id='products-banner' className='relative h-screen w-full'>
-      <figure className='md:flex hidden absolute h-screen w-full'>
+      <figure className='absolute h-screen w-full'>
         <Image
         loading='lazy' 
         src="https://www.locknlock.com/idn/image/product/2021/06/24/46699318dwdc.jpg" 
         alt="" 
         width={1500}
         height={1500}
-        className='object-cover h-full w-full'/>
-      </figure>
-      <figure className='md:hidden absolute h-screen w-full'>
-        <Image
-        loading='lazy' 
-        src="https://www.locknlock.com/idn/image/product/2021/06/24/46699318dwdc.jpg" 
-        alt="" 
-        width={700}
-        height={700}
         className='object-cover h-full w-full'/>
       </figure>
       <section className='h-full py-16 lg:px-16 md:px-14 px-5 flex flex-col justify-center z-20'>

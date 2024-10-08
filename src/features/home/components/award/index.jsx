@@ -5,22 +5,12 @@ import ViewMoreBtn from '@/components/viewMoreBtn'
 const Award = () => {
   return (
         <section id='award' className='relative h-screen md:max-h-[400px] max-h-[300px]'>
-          <figure className='md:flex hidden absolute h-screen w-full md:max-h-[400px] max-h-[300px]'>
+          <figure className='absolute h-screen w-full md:max-h-[400px] max-h-[300px]'>
             <Image
             loading='lazy' 
             src="https://www.locknlock.com/idn/image/sub/2023/01/20/96395545lomt.jpg"
             width={1200}
             height={1200}
-            alt="text"
-            className='object-cover h-screen md:max-h-[400px] max-h-[300px] w-full' 
-            />
-          </figure>
-          <figure className='md:hidden absolute h-screen w-full md:max-h-[400px] max-h-[300px]'>
-            <Image
-            loading='lazy' 
-            src="https://www.locknlock.com/idn/image/sub/2023/01/20/96395545lomt.jpg"
-            width={700}
-            height={700}
             alt="text"
             className='object-cover h-screen md:max-h-[400px] max-h-[300px] w-full' 
             />

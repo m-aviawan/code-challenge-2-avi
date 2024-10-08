@@ -25,22 +25,12 @@ const Hero = () => {
                 heroSlider.map((item, index) => {
                   return(
                     <section key={index} id={`carousel-${index + 1}`} className="relative rounded-none max-h-[100vh] w-screen my-bg-lin-1">
-                      <figure className='md:flex hidden absolute bottom-0 w-screen -z-10'>
+                      <figure className='absolute bottom-0 w-screen -z-10'>
                         <Image
                           loading='lazy'
                           src={item.img}
                           width={1500}
                           height={1500}
-                          alt={`pict-${index + 1}`} 
-                          className="object-cover h-screen w-screen"
-                        />
-                      </figure>
-                      <figure className='md:hidden absolute bottom-0 w-screen -z-10'>
-                        <Image
-                          loading='lazy'
-                          src={item.img}
-                          width={700}
-                          height={700}
                           alt={`pict-${index + 1}`} 
                           className="object-cover h-screen w-screen"
                         />
@@ -55,12 +45,12 @@ const Hero = () => {
               }
           </div>
           <div id='carousel-buttons' className='absolute inset-0 flex items-center justify-between z-20 p-1'>
-              <div onClick={prev}>
+              <div onClick={prev} className='hover:cursor-pointer'>
                 <svg className="lg:h-8 lg:w-8 md:w-5 md:h-5 w-9 h-9 transition-[0.25s] hover:text-gray-700 text-white"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
                 </svg>
               </div>
-              <div onClick={next}>
+              <div onClick={next} className='hover:cursor-pointer'>
                 <svg className="lg:h-8 lg:w-8 md:w-5 md:h-5 w-9 h-9 transition-[0.25s] hover:text-gray-700 text-white"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
                 </svg>

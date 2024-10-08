@@ -21,7 +21,7 @@ const Now = () => {
               data.map((item, index) => {
                 return(
                   <section key={index} className='relative w-full h-full'>
-                    <figure className='w-full h-full overflow-hidden'>
+                    <figure className='w-full h-full overflow-hidden hover:cursor-pointer'>
                       <Image 
                       loading='lazy'
                       src={item} 
